@@ -9,16 +9,18 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-  <div class="container">
+  <div>
     <!-- header start -->
-    <div class="header">
-      <h2>Weather</h2>
-      <div class="weather-input">
-        <input type="text" name="city" id="city_input" placeholder="Enter city name">
-        <button type="button" id="search_btn"><i class="fa-regular fa-search"></i> Search</button>
-        <button type="button" id="location_btn"><i class="bx bx-target-lock"></i> Current Location</button>
+     <div class="header-container">
+       <div class="header">
+         <h2>Weather</h2>
+         <div class="weather-input">
+           <input type="text" name="city" id="city_input" placeholder="Enter city name">
+           <button type="button" id="search_btn"><i class="fa-regular fa-search"></i> Search</button>
+           <button type="button" id="location_btn"><i class="bx bx-target-lock"></i> Current Location</button>
+          </div>
+        </div>
       </div>
-    </div>
     <!-- header end -->
 
     <!-- weather data start -->
@@ -252,12 +254,13 @@
           </div>
         </div>
         <!-- hourly forecast end -->
+
       </div>
       <!-- weather right end -->
+
     </div>
     <!-- weather data end -->
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
