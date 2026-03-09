@@ -6,7 +6,7 @@ let searchBtn = document.getElementById("search_btn");
 let locationBtn = document.getElementById("location_btn");
 
 let currentWeatherCard = document.querySelectorAll(".weather-left .card")[0];
-let sevenDaysForecastCard = document.querySelector(".day-forecast");
+let fiveDaysForecastCard = document.querySelector(".day-forecast");
 let aqiCard = document.querySelectorAll(".highlights .card")[0];
 let sunriseCard = document.querySelectorAll(".highlights .card")[1];
 
@@ -194,12 +194,12 @@ const getWeatherDetails = async (name, lat, lon, country, state) => {
       }
     });
 
-    sevenDaysForecastCard.innerHTML = "";
+    fiveDaysForecastCard.innerHTML = "";
 
     for (let i = 1; i < fiveDaysForecast.length; i++) {
       let date = new Date(fiveDaysForecast[i].dt_txt);
 
-      sevenDaysForecastCard.innerHTML += `
+      fiveDaysForecastCard.innerHTML += `
     
     <div class="forecast-item">
     

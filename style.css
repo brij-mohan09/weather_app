@@ -255,7 +255,8 @@ hr {
 
 .weather-data .weather-right .highlights {
   display: grid;
-  grid-template-columns: repeat(auto-fix, minmax(22rem, 1fr));
+  /* grid-template-columns: repeat(auto-fix, minmax(22rem, 1fr)); */
+  grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
 }
 
@@ -264,9 +265,17 @@ hr {
   grid-column: span 2;
 }
 
-.weather-data .weather-right .highlights .card:nth-of-type(n + 3) {
-  grid-column: span 1;
-}
+/* .weather-data .weather-right .highlights .card:nth-of-type(3) { */
+  /* grid-column: span 2; */
+  /* display: grid; */
+  /* grid-template-columns: repeat(5, 1fr); */
+/* } */
+
+/* .weather-data .weather-right .highlights .card {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+} */
 
 .weather-data .weather-right .highlights .card-head {
   display: flex;
@@ -310,7 +319,7 @@ hr {
 .weather-data .weather-right .air-indices {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 1rem;
   place-items: center;
 }
@@ -322,17 +331,20 @@ hr {
 .weather-data .weather-right .sunrise-sunset {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  place-items: center;
   gap: 1rem;
 }
 
 .weather-data .weather-right .sunrise-sunset .item {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
 
 .weather-data .weather-right .sunrise-sunset .item h2 {
   margin-top: 1.5rem;
+  text-align: center;
 }
 
 .weather-data .weather-right .card-item {
